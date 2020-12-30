@@ -1,12 +1,15 @@
 import harley from '../assets/img/harley.png';
 
 
-const List = ({motorcycle}) => {
+const List = ({motorcycle,carrito,agregarProducto,motorcycles}) => {
 // Agrega moto al carrito
-const selectMotorcycle = () =>{
-    console.log('comprar', motorcycle.id)
-}
+const selectMotorcycle = id =>{
+  // creo array nuevo con el objeto
+  const motorcycle=motorcycles.filter(motorcycle=>motorcycle.id === id)[0]
+    console.log('comprar', motorcycle)
+    agregarProducto([...carrito,motorcycle])
 
+}
     return (
       <div className="row">
         <div className="col-6 d-flex-center">

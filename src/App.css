@@ -100,3 +100,11 @@ body{
   justify-content: center;
   align-items: center;
 }
+.btn-cart{
+  top: 0;
+  position: fixed;
+  right: 0;
+}
+.btn-cart img{
+  width: 40px;
+}

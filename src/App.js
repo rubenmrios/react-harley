@@ -4,6 +4,9 @@ import Buttons from './components/buttons'
 import ViewMore from './components/view-more'
 import ImagesMotorcycles from './components/img-motorcycle'
 import List from './components/list-harley'
+import Cart from './components/shopping-cart'
+
+// images
 import harley_iron from './assets/img/iron-883.jpg';
 import harley_forty from './assets/img/forty-eight.jpg';
 import harley_fat from './assets/img/Fat-Boy.jpg';
@@ -21,6 +24,9 @@ function App() {
     {id:4, name:"superlow® 1200T",image:harley_superlow, description:"Su bajo asiento estilo bucket, las suspensiones de mayor recorrido y el manillar de fácil alcance crean una confortable posición de pilotaje para un amplio abanico de pilotos. Es ergonómica y ayuda a fomentar la confianza en todos los aspectos de tu viaje, desde levantarla del caballete lateral hasta manejarla tanto en recta como en curvas."},
   ])
 
+//state shopping cart
+
+  const [carrito,agregarProducto] = useState([])
 
   return (
     <div className="container-fluid">
@@ -33,9 +39,17 @@ function App() {
       motorcycles.map(motorcycle=>(
         <List
         key={motorcycle.id}
-        motorcycle={motorcycle}/>
+        motorcycle={motorcycle}
+        motorcycles={motorcycles}
+        carrito={carrito}
+        setMotorcycle={setMotorcycle}
+        agregarProducto={agregarProducto}
+        />
       ))
     }
+    <Cart 
+    carrito={carrito}/>
+
     </div>
   );
 }
