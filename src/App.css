@@ -1,38 +1,102 @@
-.App {
+body{
+  background-image: linear-gradient(to right, #1c1d22c7, #000000);  
+}
+.col-12 {
+  padding: 0 !important;
+}
+.banner {
+  color: #ffffff !important;
+  padding: 0  0 5% 0;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;   
+}
+.banner h4 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif !important;
+}
+.banner h1 {
+  font-family: "Abril Fatface", cursive !important;
+  line-height: 1;
+  margin: 20px 20px 35px;
+  font-size: 4.5rem;
+}
+.banner img {
+  width: 471px;
+  height: 349px;
+  
+
+}
+.harley-img{
+  width: 20%;
+}
+.btn-harley{
+  width: 50%;
+    height: 30vh;    font-size: 1.875rem;
+    margin: 0 auto;
+    border-radius: 0;
+}
+.h-orange:hover{
+  color: #ffffff;
+    background-color: #ff6501 !important;
+}
+.h-orange:hover{
+  color: #ffffff;
+    background-color: #ff6501 !important;
+}
+.iron{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.iron img{
+  width: 100%;
+}
+.view-more{
+  padding-top: 20%;
+}
+.text-iron{
+    font-style: italic;
+    color: white;
+    padding: 10% 14%;
+    text-align: center;
+}
+.h-30vh{
+  min-height: 30vh;
+
+}
+.motor-1{
+  background-image:linear-gradient(0deg, rgba(45,49,60,0.5), rgba(45,49,60,0.5)), url('./assets//img/motor1.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.motor-2{
+  background-image:linear-gradient(0deg, rgba(45,49,60,0.5), rgba(45,49,60,0.5)), url('./assets//img/motor2.png');
+  background-size: cover;
+  background-position: center;
+}
+.motor-3{
+  background-image:linear-gradient(0deg, rgba(45,49,60,0.5), rgba(45,49,60,0.5)), url('./assets//img/motor3.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.motor-4{
+  background-image:linear-gradient(0deg, rgba(45,49,60,0.5), rgba(45,49,60,0.5)), url('./assets//img/motor4.jpeg');
+  background-size: cover;
+  background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+.list-img{
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.d-flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
