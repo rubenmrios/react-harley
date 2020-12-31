@@ -6,7 +6,6 @@ const List = ({motorcycle,carrito,agregarProducto,motorcycles}) => {
 const selectMotorcycle = id =>{
   // creo array nuevo con el objeto
   const motorcycle=motorcycles.filter(motorcycle=>motorcycle.id === id)[0]
-    console.log('comprar', motorcycle)
     agregarProducto([...carrito,motorcycle])
 
 }

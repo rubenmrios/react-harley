@@ -48,8 +48,9 @@ function App() {
       ))
     }
     <Cart 
-    carrito={carrito}/>
-
+    carrito={carrito}
+    agregarProducto={agregarProducto}
+    />
     </div>
   );
 }
